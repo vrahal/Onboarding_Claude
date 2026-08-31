@@ -1,77 +1,77 @@
 <title>Onboarding Ledger</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 
 <style>
   /* ---------- tokens ---------- */
   :root {
-    --bg: #F2F4F0;
+    --bg: #F3F7F8;
     --surface: #FFFFFF;
-    --surface-2: #E9EDE7;
-    --surface-hover: #EFF2EC;
-    --border: #D8DED2;
-    --border-strong: #C3CBBC;
-    --text: #17211C;
-    --text-muted: #5B675E;
-    --text-faint: #8A968B;
-    --accent: #2F6F5A;
-    --accent-strong: #234F41;
-    --accent-contrast: #F5FAF6;
-    --accent-wash: #E3EEE7;
-    --cat-hr: #93601A;
-    --cat-hr-bg: #F3E5CB;
-    --cat-it: #2E5A7E;
-    --cat-it-bg: #DFE8F0;
-    --danger: #A6402A;
-    --danger-bg: #F3E0D9;
-    --shadow: 0 1px 2px rgba(23, 33, 28, 0.06), 0 8px 24px -12px rgba(23, 33, 28, 0.18);
+    --surface-2: #E6F1F2;
+    --surface-hover: #EEF6F7;
+    --border: #D6E4E6;
+    --border-strong: #BBD0D3;
+    --text: #28353F;
+    --text-muted: #5C707A;
+    --text-faint: #8C9DA5;
+    --accent: #12A0B0;
+    --accent-strong: #0C7B88;
+    --accent-contrast: #FFFFFF;
+    --accent-wash: #DEF3F5;
+    --cat-hr: #9B4396;
+    --cat-hr-bg: #F2E1F0;
+    --cat-it: #0C7B88;
+    --cat-it-bg: #DEF3F5;
+    --danger: #B0552A;
+    --danger-bg: #F5E1D5;
+    --shadow: 0 1px 2px rgba(40, 53, 63, 0.07), 0 8px 24px -12px rgba(40, 53, 63, 0.2);
   }
 
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
-      --bg: #101512;
-      --surface: #171E19;
-      --surface-2: #1E2621;
-      --surface-hover: #223029;
-      --border: #2B362F;
-      --border-strong: #3A473E;
-      --text: #E7ECE4;
-      --text-muted: #9AA79C;
-      --text-faint: #6E7A70;
-      --accent: #55B591;
-      --accent-strong: #7FCBAE;
-      --accent-contrast: #08130E;
-      --accent-wash: #1C2E27;
-      --cat-hr: #E3B15E;
-      --cat-hr-bg: #392C17;
-      --cat-it: #86B4DA;
-      --cat-it-bg: #1B2A38;
-      --danger: #E48A6C;
+      --bg: #0F1A1E;
+      --surface: #16242A;
+      --surface-2: #1D2F35;
+      --surface-hover: #24383F;
+      --border: #2C444C;
+      --border-strong: #3B5A63;
+      --text: #E7F0F2;
+      --text-muted: #9BB0B6;
+      --text-faint: #6D8189;
+      --accent: #3FC3D1;
+      --accent-strong: #6ED4DE;
+      --accent-contrast: #06181B;
+      --accent-wash: #17343A;
+      --cat-hr: #D57ACD;
+      --cat-hr-bg: #35233A;
+      --cat-it: #3FC3D1;
+      --cat-it-bg: #17343A;
+      --danger: #E38F63;
       --danger-bg: #3A2419;
       --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
     }
   }
 
   :root[data-theme="dark"] {
-    --bg: #101512;
-    --surface: #171E19;
-    --surface-2: #1E2621;
-    --surface-hover: #223029;
-    --border: #2B362F;
-    --border-strong: #3A473E;
-    --text: #E7ECE4;
-    --text-muted: #9AA79C;
-    --text-faint: #6E7A70;
-    --accent: #55B591;
-    --accent-strong: #7FCBAE;
-    --accent-contrast: #08130E;
-    --accent-wash: #1C2E27;
-    --cat-hr: #E3B15E;
-    --cat-hr-bg: #392C17;
-    --cat-it: #86B4DA;
-    --cat-it-bg: #1B2A38;
-    --danger: #E48A6C;
+    --bg: #0F1A1E;
+    --surface: #16242A;
+    --surface-2: #1D2F35;
+    --surface-hover: #24383F;
+    --border: #2C444C;
+    --border-strong: #3B5A63;
+    --text: #E7F0F2;
+    --text-muted: #9BB0B6;
+    --text-faint: #6D8189;
+    --accent: #3FC3D1;
+    --accent-strong: #6ED4DE;
+    --accent-contrast: #06181B;
+    --accent-wash: #17343A;
+    --cat-hr: #D57ACD;
+    --cat-hr-bg: #35233A;
+    --cat-it: #3FC3D1;
+    --cat-it-bg: #17343A;
+    --danger: #E38F63;
     --danger-bg: #3A2419;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px -12px rgba(0, 0, 0, 0.5);
   }
@@ -82,15 +82,15 @@
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: "Public Sans", -apple-system, "Segoe UI", sans-serif;
+    font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
     font-size: 15px;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
   }
 
-  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; text-wrap: balance; margin: 0; }
+  h1, h2, h3 { font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif; font-weight: 700; text-wrap: balance; margin: 0; }
 
-  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+  .mono { font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif; font-variant-numeric: tabular-nums; }
 
   button { font-family: inherit; cursor: pointer; }
 
@@ -129,12 +129,13 @@
 
   .brand {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
     padding: 0 4px;
   }
 
-  .brand h1 { font-size: 21px; font-weight: 600; letter-spacing: -0.01em; }
+  .brand h1 { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; }
 
   .brand p {
     margin: 0;
@@ -142,6 +143,15 @@
     color: var(--text-muted);
     letter-spacing: 0.02em;
   }
+
+  .theme-toggle-btn {
+    flex: none;
+    margin-top: 1px;
+  }
+
+  .theme-toggle-btn .icon-sun { display: none; }
+  .theme-toggle-btn.is-dark .icon-sun { display: block; }
+  .theme-toggle-btn.is-dark .icon-moon { display: none; }
 
   .hire-list {
     display: flex;
@@ -188,7 +198,7 @@
 
   .hire-card.active .avatar { background: var(--accent); color: var(--accent-contrast); }
 
-  .hire-meta { flex: 1; min-width: 0; }
+  .hire-meta { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
 
   .hire-meta .name {
     font-size: 13.5px;
@@ -214,7 +224,7 @@
 
   .ring circle.track { stroke: var(--surface-2); }
   .ring circle.fill { stroke: var(--accent); transition: stroke-dashoffset 0.3s ease; }
-  .ring text { font-family: "IBM Plex Mono", monospace; font-size: 8.5px; fill: var(--text-muted); }
+  .ring text { font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif; font-size: 8.5px; fill: var(--text-muted); }
 
   .add-hire-btn {
     display: flex;
@@ -309,6 +319,12 @@
 
   .icon-btn:hover { color: var(--danger); border-color: var(--danger); background: var(--danger-bg); }
 
+  .icon-btn.confirming, .icon-btn.confirming:hover {
+    color: var(--accent-contrast);
+    border-color: var(--danger);
+    background: var(--danger);
+  }
+
   .status-badge {
     display: inline-flex;
     align-items: center;
@@ -333,7 +349,7 @@
     margin-bottom: 8px;
   }
 
-  .progress-top .pct { font-family: "IBM Plex Mono", monospace; font-size: 13px; color: var(--text-muted); }
+  .progress-top .pct { font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 13px; color: var(--text-muted); }
 
   .progress-bar {
     height: 8px;
@@ -368,7 +384,7 @@
 
   .stage-head h3 { font-size: 15.5px; font-weight: 600; }
   .stage-head .hint { font-size: 12px; color: var(--text-faint); margin-top: 2px; }
-  .stage-head .count { font-family: "IBM Plex Mono", monospace; font-size: 12px; color: var(--text-muted); flex: none; }
+  .stage-head .count { font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif; font-variant-numeric: tabular-nums; font-size: 12px; color: var(--text-muted); flex: none; }
 
   .task-row {
     display: flex;
@@ -554,11 +570,26 @@
   svg.icon { width: 15px; height: 15px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 </style>
 
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("onboarding-ledger-theme");
+      if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+    } catch (e) { /* storage unavailable, fall back to system theme */ }
+  })();
+</script>
+
 <div class="app">
   <aside class="sidebar">
     <div class="brand">
-      <h1>Onboarding Ledger</h1>
-      <p>New joiner checklists, start to first month</p>
+      <div>
+        <h1>Onboarding Ledger</h1>
+        <p>New joiner checklists, start to first month</p>
+      </div>
+      <button class="icon-btn theme-toggle-btn" id="themeToggleBtn" data-action="toggle-theme" title="Switch to dark mode" aria-label="Switch to dark mode">
+        <svg class="icon icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
     </div>
     <div class="hire-list" id="hireList"></div>
     <button class="add-hire-btn" data-action="open-add-hire">
@@ -677,6 +708,48 @@
   }
 
   var state = load();
+  var deleteTimers = {};
+
+  // ---------- theme ----------
+
+  var THEME_KEY = "onboarding-ledger-theme";
+
+  function systemPrefersDark() {
+    return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
+
+  function getStoredTheme() {
+    try { return localStorage.getItem(THEME_KEY); } catch (e) { return null; }
+  }
+
+  function effectiveTheme() {
+    var stored = getStoredTheme();
+    if (stored === "light" || stored === "dark") return stored;
+    return systemPrefersDark() ? "dark" : "light";
+  }
+
+  function applyTheme() {
+    var stored = getStoredTheme();
+    if (stored === "light" || stored === "dark") {
+      document.documentElement.setAttribute("data-theme", stored);
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+    var eff = effectiveTheme();
+    var btn = document.getElementById("themeToggleBtn");
+    if (btn) {
+      btn.classList.toggle("is-dark", eff === "dark");
+      var label = eff === "dark" ? "Switch to light mode" : "Switch to dark mode";
+      btn.title = label;
+      btn.setAttribute("aria-label", label);
+    }
+  }
+
+  function toggleTheme() {
+    var next = effectiveTheme() === "dark" ? "light" : "dark";
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* continue without persisting */ }
+    applyTheme();
+  }
 
   function hireState(id) {
     if (!state.perHire[id]) {
@@ -868,7 +941,9 @@
     if (!actionEl) return;
     var action = actionEl.getAttribute("data-action");
 
-    if (action === "select-hire") {
+    if (action === "toggle-theme") {
+      toggleTheme();
+    } else if (action === "select-hire") {
       state.selectedId = actionEl.getAttribute("data-id");
       save();
       render();
@@ -882,8 +957,9 @@
       document.getElementById("hireDialog").close();
     } else if (action === "delete-hire") {
       var id = actionEl.getAttribute("data-id");
-      var hire = state.hires.find(function (h) { return h.id === id; });
-      if (hire && confirm('Remove "' + hire.name + '" and their checklist? This cannot be undone.')) {
+      if (actionEl.dataset.confirming === "1") {
+        clearTimeout(deleteTimers[id]);
+        delete deleteTimers[id];
         state.hires = state.hires.filter(function (h) { return h.id !== id; });
         delete state.perHire[id];
         if (state.selectedId === id) {
@@ -891,6 +967,17 @@
         }
         save();
         render();
+      } else {
+        actionEl.dataset.confirming = "1";
+        actionEl.classList.add("confirming");
+        actionEl.setAttribute("title", "Click again to remove permanently");
+        actionEl.setAttribute("aria-label", "Click again to confirm removing this joiner");
+        deleteTimers[id] = setTimeout(function () {
+          actionEl.dataset.confirming = "0";
+          actionEl.classList.remove("confirming");
+          actionEl.setAttribute("title", "Remove joiner");
+          actionEl.setAttribute("aria-label", "Remove joiner");
+        }, 3000);
       }
     } else if (action === "remove-task") {
       var hid = actionEl.getAttribute("data-hire");
@@ -985,6 +1072,7 @@
     state.selectedId = state.hires[0].id;
   }
 
+  applyTheme();
   render();
 })();
 </script>
